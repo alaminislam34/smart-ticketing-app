@@ -91,7 +91,7 @@
       <!-- navbar section -->
       <div class="navbar w-11/12 mx-auto pt-8 pb-4 relative">
         <div class="navbar-start">
-          <a class="text-2xl md:text-4xl font-bold text-darked">P-Ticket</a>
+          <a class="text-2xl md:text-4xl font-bold text-darked">Bus-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="flex justify-between gap-14">
@@ -165,7 +165,7 @@
           </div>
           <div
             id="menu-items"
-            class="w-full bg-white rounded-lg shadow-lg p-6 absolute top-20 left-0 text-center hidden"
+            class="w-full bg-white rounded-lg shadow-lg p-6 absolute top-20 left-0 text-center hidden z-50"
           >
             <ul class="flex flex-col gap-6">
               <li>
@@ -199,7 +199,9 @@
 
       <!-- banner section start -->
       <section class="flex justify-center items-center my-6">
-        <div class="carousel w-11/12 mx-auto rounded-lg">
+        <div class="carousel w-11/12 mx-auto rounded-lg relative">
+          <!-- banner image section -->
+
           <div id="slide1" class="carousel-item relative w-full">
             <img src="./images/banner.png" class="w-full" />
             <div
@@ -212,12 +214,91 @@
                 ><i class="fa-solid fa-angles-right"></i
               ></a>
             </div>
-            <div></div>
+          </div>
+          <!-- banner title section -->
+
+          <div
+            class="absolute text-center lg:py-20 lg:px-56 md:py-14 md:px-32 bg-gradient-to-t from-black/20 to-gray-800/20 rounded-3xl h-full"
+          >
+            <div class="space-y-8">
+              <h1
+                class="lg:text-6xl md:text-5xl text-3xl font-extrabold text-white space-y-6"
+              >
+                <span class="block">End-to-End Travel with</span>
+                <span class="text-primary block">P Paribahan</span>
+              </h1>
+              <p class="text-white px-20">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <button
+                class="bg-primary lg:py-5 md:py-4 py-2 lg:px-8 md:px-6 px-4 text-xl text-darked rounded-lg font-bold"
+              >
+                Buy Tickets
+              </button>
+              <div
+                class="grid grid-cols-3 gap-6 absolute -bottom-14 z-20 left-20 right-20"
+              >
+                <!-- first card -->
+
+                <div
+                  class="flex flex-row gap-3 bg-white rounded-xl py-6 px-8 border-b-2 border-primary"
+                >
+                  <div>
+                    <img
+                      class="w-16 h-16"
+                      src="./images/people.png"
+                      alt="People"
+                    />
+                  </div>
+                  <div class="text-darked text-left">
+                    <span class="text-4xl font-bold">500k+</span><br />
+                    <span class="">Registered users</span>
+                  </div>
+                </div>
+                <!-- second card -->
+
+                <div
+                  class="flex flex-row gap-3 bg-white rounded-xl py-6 px-8 border-b-2 border-primary"
+                >
+                  <div>
+                    <img
+                      class="w-16 h-16"
+                      src="./images/ticket-cupon.png"
+                      alt="Ticket coupon"
+                    />
+                  </div>
+                  <div class="text-darked text-left">
+                    <span class="text-4xl font-bold">1.7 lacks</span><br />
+                    <span class="">Ticket sold</span>
+                  </div>
+                </div>
+                <!-- third card -->
+
+                <div
+                  class="flex flex-row gap-3 bg-white rounded-xl py-6 px-8 border-b-2 border-primary"
+                >
+                  <div>
+                    <img
+                      class="w-16 h-16"
+                      src="./images/stoppage.png"
+                      alt="Stoppage"
+                    />
+                  </div>
+                  <div class="text-darked">
+                    <span class="text-4xl font-bold">80k+</span><br />
+                    <span class="">Rental partners</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- banner section end -->
     </header>
+    <script src="./js/library.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
